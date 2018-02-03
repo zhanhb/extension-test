@@ -1,0 +1,10 @@
+language: java
+cache:
+  directories:
+    - $HOME/.m2
+env:
+  - 
+  - MAVEN_CONFIG=-P2.0
+jdk: oraclejdk8
+install: true
+script: chmod +x mvnw && ./mvnw test
